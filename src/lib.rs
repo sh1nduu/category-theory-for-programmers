@@ -1,3 +1,9 @@
+#[macro_use]
+#[cfg(test)]
+extern crate approx;
+
+mod optional;
+
 use std::{collections::HashMap, hash::Hash};
 
 pub fn id<T>(x: T) -> T {
